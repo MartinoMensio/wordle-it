@@ -973,8 +973,12 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
 
     function Pa(e) {
         var a, s = Na(e);
-        return a = s % Aa.length, Aa[a]
-            // return 'HERE'
+        var key = new URLSearchParams(window.location.search).get('key')
+        if (q) {
+            return atob(key)
+        } else {
+            return a = s % Aa.length, Aa[a]
+        }
     }
 
     function Na(e) {
