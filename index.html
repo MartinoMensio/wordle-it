@@ -159,6 +159,18 @@
             window.wordle.hash = 'parle v220317';
         })();
     </script>
+    <script>
+        (function() {
+            // clear and check custom
+            customStored = window.localStorage.getItem('custom');
+            customThis = new URLSearchParams(window.location.search).get('custom');
+            if (customThis && customThis != customStored) {
+                // reset to make everything start again
+                window.localStorage.clear();
+                window.localStorage.setItem('custom', customThis);
+            }
+        })();
+    </script>
     <script src="wordle-it.js"></script>
     <game-app></game-app>
 </body>
