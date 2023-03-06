@@ -1,3 +1,10 @@
+# What changes from Par🇮🇹le
+
+With this fork, you can create and share a version with a custom word:
+
+- settings: set the word and then generate your link
+- word managed with URL parameter encoded in Base64
+- resetting and managing `localStorage`
 # Par🇮🇹le
 
 https://pietroppeter.github.io/wordle-it/
